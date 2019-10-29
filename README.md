@@ -1,4 +1,4 @@
-PAV - P3: detección de pitch
+PAV - P3: detección de pitch de Fernandez-Rajal-Fernández
 ============================
 
 Esta práctica se distribuye a través del repositorio GitHub [Práctica 3](https://github.com/albino-pav/P3),
