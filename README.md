@@ -1,57 +1,42 @@
 PAV - P3: detección de pitch
 ============================
 
-Para descargar los ficheros de esta práctica, debe ir a la página principal del repositorio GitHub,
-[práctica 3](https://github.com/albino-pav/P3), y clickar en la caja verde situada a la derecha,
-justo encima del listado de ficheros del repositorio, con el nombre **`Clone or download`**. Al hacerlo,
-se despliega un menú en el que aparece la dirección del repositorio. Copie esta dirección en el
-portapapeles (puede usar la rata y **[Ctrl-C]** o usar el icono a la derecha de la dirección). A
-continuación, vaya al directorio **PAV** de su ordenador y ejecute la orden siguiente:
+Esta práctica se distribuye a través del repositorio GitHub [Práctica 3](https://github.com/albino-pav/P3),
+y una parte de su gestión se realizará mediante esta web de trabajo colaborativo.  Al contrario que Git,
+GitHub se gestiona completamente desde un entorno gráfico súmamente intuitivo. Además, está razonablemente
+documentado, tanto internamente, mediante sus [Guías de GitHub](https://guides.github.com/), como
+externamente, mediante infinidad de tutoriales, guías y vídeos disponibles gratuitamente en internet.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
-usuario:~/PAV$ git clone dirección_copiada
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## Inicialización del repositorio de la práctica.
 
-Si todo ha funcionado correctamente, el repositorio se descargará en su ordenador y estará preparado para 
-trabajar en él.
+Para cargar los ficheros en su ordenador personal debe seguir los pasos siguientes:
 
-#### Creación de una rama (_branch_).
-
-Lo primero que debe hacer es crear una rama nueva en su repositorio, ya que GitHub no le permitirá 
-actualizar la rama principal (**master**) del proyecto. Utilice un nombre que le identifique personalmente
-(una posible elección es su nombre y apellido). Si, como se recomienda, va a trabajar colaborativamente en
-el seno de su grupo de prácticas, es conveniente que uno de sus miembros escoja como nombre de la rama la
-combinación de los primeros apellidos de los integrantes del grupo.
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
-usuario:~/PAV/P3$ git branch Fulano-Mengano
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#### Inicialización del trabajo colaborativo usando GitHub.
-
-Seguramente sea un buen momento para crear un repositorio con su copia del proyecto en **GitHub**. De este
-modo, los distintos miembros del grupo podrán realizar sus cambios localmente y compartir sus avances en
-un sitio común y accesible.
-
-Para ello, lo primero que debe hacer es, si no dispone de ella, crear una cuenta en GitHub. El proceso para 
-ello es bastante sencillo siguiendo las instrucciones proporciondas por el proio GitHub. Al contrario que
-Git, GitHub se gestiona completamente desde un entorno gráfico súmamente intuitivo. Además, está 
-razonablemente documentado, tanto internamente, mediante sus [Guías de GitHub](https://guides.github.com/),
-como externamente, mediante multitud de tutoriales, guías y vídeos disponibles gratuitamente en internet.
-
-Cree un repositorio vacío en su nueva cuenta de GitHub (aunque no es estrictamente necesario, use el mismo 
-nombre que la práctica: **P3**). Obtenga la dirección de su nuevo repositorio vacío, y declárelo como 
-origen remoto de su repositorio local:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
-usuario:~/PAV/P3$ git remote add origin dirección-repositorio-vacío
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-A continuación, ya puede sincronizar su repositorio remoto con su copia local con la orden:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
-usuario:~/PAV/P3$ git push origin master
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*	Abra una cuenta GitHub para gestionar esta y el resto de prácticas del curso.
+*	Cree un repositorio GitHub con el contenido inicial de la práctica:
+	*	Acceda a su página principal de GitHub pulsando sobre su icono personal en la parte superior
+		izquierda de cualquier página GitHub (debe estar identificado).
+	*	Pulse en el botón con el texto **New** que encontrará arriba a la izquierda.
+	*	Dele el nombre **P3**, deje las opciones por defecto y pulse en el botón al final de la página con
+		el texto **Create repository**.
+	*	En la página siguiente, de inicialización del repositorio, escoja la última opción, **Import code**,
+		introduzca la dirección del repositorio de la [Práctica 3](https://github.com/albino-pav/P3), y
+		pulse en el botón **Begin import**.
+	*	Después de unos segundos, el repositorio contendrá los ficheros originales de la práctica.
+*	En la página principal del repositorio, localice el botón **Branch: master** y úselo para crear una
+	rama nueva con los primeros apellidos de los integrantes del equipo de prácticas separados por guion.
+*	También en la página principal del repositorio, en la pestaña **Settings**, escoja la opción 
+	**Collaborators** y añada a su compañero de prácticas.
+	*	Éste recibirá un email solicitándole confirmación. Una vez confirmado, tanto él como el propietario
+		podrán gestionar el repositorio, por ejemplo: crear ramas en él o subir las modificaciones de su
+		directorio local de trabajo al repositorio GitHub usando el comando `git push ...`.
+*	Cada usuario del repositorio debe descargárselo en su ordenador con la orden `git clone
+	dirección-del-repositorio.git`.
+*	A partir de este momento, todos los miembros del grupo de prácticas pueden trabajar en su directorio
+	local del modo habitual.
+	*	También puede utilizar el repositorio remoto como repositorio central para el trabajo colaborativo
+		de los distintos miembros del grupo de prácticas; o puede serle útil usarlo como copia de seguridad.
+	*	Al final de la práctica, la rama creada en el repositorio GitHub servirá para remitir la práctica
+		para su evaluación utilizando el mecanismo *pull request*.
 
 ## Entrega de la práctica.
 
